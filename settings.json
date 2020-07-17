@@ -1,0 +1,37 @@
+{
+    "tracking": {
+        "filter": "Cumulant_Filter",
+        "declutter": "No",
+        "camera_params_file": "None",
+        "motion_model": "CV",               "_comment": "'RW' (random walk) or 'CV' (nearly-constant velocity)",
+        "sigma_q": [5.0, 5.0, 5.0, 5.0],    "_comment": "standard deviations of (u_dot [u], v_dot [v], w, h) for CV [RW]",
+        "sigma_r": [10.0, 10.0, 10.0, 10.0],  "_comment": "standard deviations of (u, v, w, h)",
+        "prob_survival": 0.9999,
+        "prob_detection": 0.90,
+        "prob_false_alarm": 0.01,
+        "false_alarm_rate": 1.0e-4,
+        "pruning_threshold": 1.0e-4,
+        "pruning_horizon": 5,
+        "miss_horizon": 10,
+        "track_min_length": 1,
+        "gating_confidence": 0.99,
+        "iou_threshold": 0.00,
+        "reid_threshold": 0.20,
+        "use_saved_dets": "Yes",
+        "directories": {
+            "databases_base_dir": "./Data",
+            "detections_base_dir": "./Data",
+            "datasets": ["WAMI"],
+            "datasets_folders": ["WAMI"],
+            "input_images_dir": "images",
+            "input_videos_dir": "videos",
+            "video_file_format": "{:s}.{:s}",
+            "output_videos_dir": "output_videos",
+            "detections_dir": "detections",
+            "detection_file_extension": ".csv",
+            "results_dir": "log_files",
+            "result_file_format": "{:s}_logfile_{:s}.csv"
+        },
+        "default_fps": 30
+    }
+}

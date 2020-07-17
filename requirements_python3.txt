@@ -1,0 +1,11 @@
+###### Requirements ######`
+numpy
+scipy
+pandas
+copy
+itertools
+termcolor
+json
+argparse
+munkres
+
